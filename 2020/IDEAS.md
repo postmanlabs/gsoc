@@ -7,7 +7,15 @@ We accept original ideas and proposals for every project. Following is a list of
 
 ### Newman
 
-### Collection SDK
+* **Newman login**: Add support for a new `newman login` command to be an alternative to the conventional way of using Postman API links to run collections. This will require a dedicated security effort to ensure safety of user's Postman API keys.
+
+* **Create new or update existing reporters**: Newman reporters provide information about the current collection run in a format that is easy to both: disseminate and assimilate. Create new external reporters or update existing reporters like `newman-reporter-html`. Working examples of how Newman reporters work can be found here - https://github.com/postmanlabs/newman/tree/develop/lib/reporters
+
+### Collection SDK + Runtime
+* **Support for more request body methods**: Add support for different request body serialization techniques like Protocol Buffers, JSON RPC, etc. in Postman runtime library. Support for protobuf is one of the most request feature from our comunity - https://github.com/postmanlabs/postman-app-support/issues/2801
+
+* **Support for different authentication schemes**: Add support for different authentication schemes like JWT, NTLM Kerberos, etc.
+Steps to be done to add a new auth mechanism https://github.com/postmanlabs/postman-runtime/blob/develop/docs/new-auth-mechanisms.md
 
 ### Code Generators
 
