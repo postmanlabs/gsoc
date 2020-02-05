@@ -7,7 +7,7 @@ We accept original ideas and proposals for every project. Following is a list of
 
 ### Newman
 
-* **Newman login**: Add support for a new `newman login` command to be an alternative to the conventional way of using cloud URLs to run collections. This will require dedicated security considerations to ensure safety of user's Postman API key.
+* **Newman login**: Add support for a new `newman login` command to be an alternative to the conventional way of using cloud URLs to run collections. It will allows users to login with their API key from CLI and simply run collections by providing their unique IDs. This will also require dedicated security considerations to ensure safety of user's Postman API key.
 
 * **Create new or update existing reporters**: Newman reporters provide information about the current collection run in a format that is easy to both: disseminate and assimilate. Create new external reporters or update existing reporters like `newman-reporter-html`. Working examples of how Newman reporters work can be found here - https://github.com/postmanlabs/newman/tree/develop/lib/reporters
 
