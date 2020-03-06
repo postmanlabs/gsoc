@@ -19,6 +19,8 @@ We accept original ideas and proposals for every project. Following is a list of
 * **Support for different authentication schemes**: Add support for different authentication schemes like JWT, NTLM Kerberos, etc.
 Steps to be done to add a new auth mechanism https://github.com/postmanlabs/postman-runtime/blob/develop/docs/new-auth-mechanisms.md
 
+* **Support for RSA-SHA1 signature method in OAuth1**: Add support for RSA-SHA1 signature method in Runtime OAuth1 helper as requested in - https://github.com/postmanlabs/postman-app-support/issues/2302
+
 ### Code Generators
 
 * **Collection-level codegen**: Convert a Postman collection to a client SDK. Work on a module that utilizes Postman's existing code-generators to create an SDK for an entire collection, not just a request. This could be extremely beneficial to advanced users.
