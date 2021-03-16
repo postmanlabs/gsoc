@@ -1,4 +1,4 @@
-Postman in Google Summer of Code 2021 - Ideas
+Postman in Google Summer of Code 2020 - Ideas
 =============================================
 
 ## Project Ideas
@@ -147,5 +147,5 @@ Extra thoughts:
 Can it be used directly in a system test so you can decide on the expected outcome?
 Required knowledge:
 You need to learn the spec basics (what channels are). It will be useful to learn first how to setup environments with Docker compose and mocks and a proper testing environment will have to be created first to work on the implementation and load generation.
- 
+
 
