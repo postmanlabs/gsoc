@@ -1,16 +1,37 @@
-Idea 1: Newman Request
+Postman in Google Summer of Code 2021 - Ideas
+=============================================
+
+## Project Ideas
+
+We accept original ideas and proposals for every project. Following is a list of ideas which you can use as a reference.
+
+### Newman 
+
+* **Newman login**: Add support for a new `newman login` command to be an alternative to the conventional way of using cloud URLs to run collections. It will allows users to login with their API key from CLI and simply run collections by providing their unique IDs. This will also require dedicated security considerations to ensure safety of user's Postman API key.
+
+* **Create new or update existing reporters**: Newman reporters provide information about the current collection run in a format that is easy to both: disseminate and assimilate. Create new external reporters or update existing reporters like `newman-reporter-html`. Working examples of how Newman reporters work can be found here - https://github.com/postmanlabs/newman/tree/develop/lib/reporters
+
+* **Ability to execute individual requests**: Currently, you can run entire Postman collections. Add the capability the run a single request - not the whole collection.
+
+### Collection SDK + Runtime
+* **Support for more request bo
+
+### Idea 1: Newman Request
 Newman already makes it effortless for you to run Postman collections. It enables you to see the results with your favourite reporters on CLI, as JSON, HTML etc. making it easy to summarise data and at the same time, use it in automations and build systems. But currently, it is limited to only running a collection of requests. This project aims to enable users to use these same capabilities for a single request.
+
 Expected outcome
 Users can send a single request with Newman and show the request/response using a reporter of their choice.
 Replacing curl with newman request in a curl command should run the send the request using Newman.
 If user is logged in, the request should show up in Postman app’s History in sidebar.
+
 Relevant skills
 JavaScript language
 Understanding of HTTP protocol.
 curl
+
 Complexity: low 
 
-Idea 2: Parallel Iterations in Newman
+### Idea 2: Parallel Iterations in Newman
 Newman supports running multiple iterations of a collection with different data provided in a CSV or JSON file, enabling users to test an API against multiple scenarios. But Newman executes each iteration serially and this can take a lot of time as the number of requests in a collection and iterations grow. This project aims to bring parallelism into Newman by splitting the iterations data into multiple chunks and running them as threads to bring down the total time roughly by a factor of n, where n is the number of threads.
 Expected outcome
 Newman can split iteration data and run multiple runs using this data.
@@ -20,7 +41,7 @@ JavaScript language
 Understanding of threads and processes communication
 Complexity: low 
 
-Idea 3: Newman Dashboard
+### Idea 3: Newman Dashboard
 Newman has an array of reporters that consume the run data that Newman provides. These include viewing a run in the terminal using CLI, as JSON which can be easily transported by a build system, as an HTML summary webpage, and many more. However, Newman lacks a way to control the runs in a central dashboard. This project aims to create a dashboard on a browser which can be used to start, resume, pause and stop Newman runs.
 Expected outcome
 A dashboard can be opened on a browser which shows currently running Newman runs.
@@ -32,22 +53,22 @@ Understanding of daemons and IPC (websockets is a plus).
 Basic understanding of HTML, CSS
 Complexity: medium
 
-Idea 4: API-First Blueprint for a Commerce API
+### Idea 4: API-First Blueprint for a Commerce API
 Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org as the underlying schema, providing a functioning and well documented example of what an API can be.
-Idea 5: API Conversion API
+### Idea 5: API Conversion API
 Aggregating all of the OpenAPI conversion tooling that exists out there into a single API conversion solution that will convert all API formats similar to API Transformer - https://www.apimatic.io/transformer/, publishing as a single API that can be hosted and operated by anyone as an open source conversion solution.
 
-Idea 6: Open API Postman Public Workspace
+### Idea 6: Open API Postman Public Workspace
 https://www.postman.com/api-evangelist/workspace/openapi/overview
  
-Idea 7: Simple schema registry
+### Idea 7: Simple schema registry
 Provide a simple implementation of the schema registry API and showcase how this can be used with AsyncAPI document and schema references. It can do an in-memory persistence for schemas as it would be used purely for showcases, and learning materials.
 Use case:
 In AsyncAPI file you can provide schemas for the payload of the message. Those schemas can be shared between different applications, meaning, different AsyncAPI files. Schema registries that store such shareable schemas are becoming a de-facto standard. Would be great to have a simple mock implementation of such schema to show how would it work with AsyncAPI documents.
 Required knowledge: 
 You do not need any specific deep knowledge of any subject here. You will only have to provide an implementation of this API. It is not supposed to be a production-ready implementation, but only for testing and showcasing. Knowledge about how to use this registry with AsyncAPI is something that you can learn while working on the task with mentor support. There is not specific repository where you can place the code. It is something that can be decided anytime during development.
 
-Idea 8: Duplications discovery - optimizer
+### Idea 8: Duplications discovery - optimizer
 Build a library that code-first users would benefit from the most but not only. A library that as the input gets AsyncAPI document and as output provides optimized AsyncAPI document. For example:
 Reuse of components
 Duplicated schemas moved to components and ref-ed from a message
@@ -60,7 +81,7 @@ This task will require from you learning some details about the AsyncAPI spec to
 understand what parts can be componentized and how reuse works in the spec. This knowledge will be essential to be able to apply optimizations. You will for sure have to go through our getting stated guides and later the spec. Mentors will be available for any questions and setting directions.
 We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli  
 
-Idea 9: AsyncAPI Diff
+### Idea 9: AsyncAPI Diff
 A library that as the input gets two AsyncAPI documents and shows changes between them. As an output, you get json pointers to sections that are different. The main purpose of such a tool is a changelog where you can present to the user what has changed between v1 and v2 of the document. Some ideas can be picked up from https://github.com/OpenAPITools/openapi-diff  
 We basically need a library that can be later used to build such a UI
 Use case:
@@ -70,7 +91,7 @@ Required knowledge:
 There is not much knowledge about the spec itself needed. It is about pointing out differences in 2 different files, but not as pointing what lines changed but in general what objects changed. So if there was an update in payload, the library must specify what channel in what message got updated (with json pointers most probably). You can familiarize with other tools that do it already for other specifications.
 We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli
 
-Idea 10: AsyncAPI Applications Relations Finder
+### Idea 10: AsyncAPI Applications Relations Finder
 A library that as the input gets a list of AsyncAPI documents and analyzes them to get information about Applications described by those files:
 If they subscribe or publish to the same channels
 If one subscribes to a channel that the other one publishes to
@@ -87,7 +108,7 @@ There is no decision yet if this is a library that will have to live in a separa
 We already started work on the CLI so before summer there will be enough to plug in this functionality
 asyncapi/cli  
  
-Idea 11: AsyncAPI Extensions registry
+### Idea 11: AsyncAPI Extensions registry
 Provide an implementation of the extensions registry for AsyncAPI. This task includes action points:
 - improve the shape/definition of the single extension (describe it by JSON Schema) - reference
 asyncapi/extensions-catalog
@@ -97,7 +118,7 @@ asyncapi/parser-js  - for validation of extension against provided extension sch
  
 Required knowledge:
 The main contribution will go into the parser. So you will have to first onboard on the project with few basic tasks handed over by the mentor. The rest will be explained by the mentor. 
-Idea 12:  Chatbot for AsyncAPI creators
+### Idea 12:  Chatbot for AsyncAPI creators
 Explore how we could help people to write the spec document without knowing the specification. Prepare a kind of prototype. Instead of learning the spec, users talk to a chatbot, and as a result of the conversation, they get an AsyncAPI document generated. The chatbot should learn from the specification what are the possible solutions and options.
 Use case:
 Learning the AsyncAPI spec can be a time-consuming process. This is what causes learning of every new specification hard. Let’s explore if we can have a machine that can consume the spec, its JSON schema and serve the users as an expert. Basing on a set of questions and answers it should generate an AsyncAPI document for the user.
