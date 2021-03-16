@@ -7,7 +7,7 @@ Also, check out AsyncAPI which has joined hands with Postman -- https://github.c
 
 # Communication
 
-Join our community <a href="https://community.postman.com/">here </a><br />
+Join our community <a href="https://community.postman.com/">here </a> to interact with our mentors and discuss your project ideas<br />
 Read the guidelines here - https://community.postman.com/t/gsoc-2021-guidelines/
 
 * Create an issue on this project if you're unable to get a response from the community
