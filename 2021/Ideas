@@ -14,7 +14,9 @@ We accept original ideas and proposals for every project. Following is a list of
 * **Ability to execute individual requests**: Currently, you can run entire Postman collections. Add the capability the run a single request - not the whole collection.
 
 ### Collection SDK + Runtime
-* **Support for more request bo
+* **Support for more request bo**
+
+### Code Generators
 
 ### Idea 1: Newman Request
 Newman already makes it effortless for you to run Postman collections. It enables you to see the results with your favourite reporters on CLI, as JSON, HTML etc. making it easy to summarise data and at the same time, use it in automations and build systems. But currently, it is limited to only running a collection of requests. This project aims to enable users to use these same capabilities for a single request.
