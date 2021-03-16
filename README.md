@@ -2,8 +2,8 @@
 
 # Postman Google Summer Code
 
-This repository contains information about Postman's open source projects in Google Summer of Code.
-Also, check out AsyncAPI which has joined with Postman -- https://github.com/asyncapi
+This repository contains information about Postman's open source projects in Google Summer of Code.</br>
+Also, check out AsyncAPI which has joined hands with Postman -- https://github.com/asyncapi
 
 # Communication
 
