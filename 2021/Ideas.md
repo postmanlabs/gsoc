@@ -52,11 +52,42 @@ Basic understanding of HTML, CSS</br>
 ### Idea 4: API-First Blueprint for a Commerce API</br>
 Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org as the underlying schema, providing a functioning and well documented example of what an API can be.
 
+**Use case:**</br>
+Increasing the number of API blueprints that could serve as learning material for individuals/teams working on an API first approach.</br>
+An API blueprint could be useful for anyone to hit the ground running when building a Commerce API.</br>
+
+**Required knowledge:**</br>
+Understanding of the API first philosophy - https://www.postman.com/use-cases/api-first-development/.</br>
+Comfort with YAML/JSON formats.</br>
+Understanding of API lifecycle phases - Design, Document, Test</br>
+
+
 ### Idea 5: API Conversion API</br>
 Aggregating all of the OpenAPI conversion tooling that exists out there into a single API conversion solution that will convert all API formats similar to API Transformer - https://www.apimatic.io/transformer/, publishing as a single API that can be hosted and operated by anyone as an open source conversion solution.
 
-### Idea 6: Open API Postman Public Workspace</br>
-https://www.postman.com/api-evangelist/workspace/openapi/overview
+**Use case:**</br>
+There is no open source solution that provides conversion among all formats in one place. There are a lot of open source CLI tools - https://github.com/postmanlabs/openapi-to-postman, https://github.com/postmanlabs/swagger2-postman2, APIs, apps that have converters but the idea is to have a common interface for all of them.
+
+**Required knowledge:**</br>
+Depends on the tech stack used by existing converters</br>
+Comfortable with building APIs and learning how to build an API on top of existing converters</br>
+Exposure to frontend technologies to build the UI for the conversions.</br>
+Willingness to learn about different API formats - swagger, raml, openapi</br>
+
+
+### Idea 6: Contributing to Postman Public Workspace</br>
+https://www.postman.com/api-evangelist/workspace/openapi/overview </br>
+
+The workspace above has a list of tasks/ideas that could serve as utilities for managing OpenAPI specifications eg. cleanup tasks, adding default responses.
+Similarly, there are other public workspaces:</br>
+Managing Postman collections - https://www.postman.com/api-evangelist/workspace/collections/overview</br>
+Managing Postman environments - https://www.postman.com/api-evangelist/workspace/environments/overview</br>
+
+**Expectation:**</br>
+Build utilities for managing Postman entities (OpenAPI definitions/collections/environments). These utilities could be scripts embedded in Postman requests/collections or an open source project eg. openapi-utils.
+
+**Required knowledge:**</br>
+Should be familiar with or willing to learn how to use the Postman API, OpenAPI concepts. Hands-on experience with Javascript is necessary. Some familiarity with version control in Postman would help in managing contributions.
  
 ### Idea 7: Simple schema registry</br>
 Provide a simple implementation of the schema registry API and showcase how this can be used with AsyncAPI document and schema references. It can do an in-memory persistence for schemas as it would be used purely for showcases, and learning materials.
