@@ -138,7 +138,7 @@ Later on, we could use this library in AsyncAPI CLI and also the AsyncAPI Studio
 
 **Required knowledge:**</br>
 There is no need to have any experience in event-driven architecture. You do not even need to know AsyncAPI spec too much. It is a pure coding task where you will need to find matching patterns between different documents and return this information. You will have the full support of the mentor on the subject. Mentors will define requirements, etc.</br>
-There is no decision yet if this is a library that will have to live in a separate repository or be a part of an existing CLI or UI project.</br>
+There is no decision yet if this is a library that will have to live in a separate repository or be a part of an existing CLI or UI project.</br></br>
 We already started work on the CLI so before summer there will be enough to plug in this functionality asyncapi/cli (https://github.com/asyncapi/cli)</br></br>
  
 ### Idea 11: AsyncAPI Extensions registry</br>
