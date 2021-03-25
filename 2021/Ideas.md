@@ -32,7 +32,7 @@ Users can specific the number of parallel iterations that Newman can run.</br>
 JavaScript language</br>
 Understanding of threads and processes communication</br>
 
-**Complexity**: low </br>
+**Complexity**: low </br></br>
 
 ### Idea 3: Newman Dashboard</br>
 Newman has an array of reporters that consume the run data that Newman provides. These include viewing a run in the terminal using CLI, as JSON which can be easily transported by a build system, as an HTML summary webpage, and many more. However, Newman lacks a way to control the runs in a central dashboard. This project aims to create a dashboard on a browser which can be used to start, resume, pause and stop Newman runs.
@@ -47,10 +47,10 @@ JavaScript language</br>
 Understanding of daemons and IPC (websockets is a plus).</br>
 Basic understanding of HTML, CSS</br>
 
-**Complexity**: medium</br>
+**Complexity**: medium</br></br>
 
 ### Idea 4: API-First Blueprint for a Commerce API</br>
-Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org as the underlying schema, providing a functioning and well documented example of what an API can be.
+Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org (http://Schema.org) as the underlying schema, providing a functioning and well documented example of what an API can be.
 
 **Use case:**</br>
 Increasing the number of API blueprints that could serve as learning material for individuals/teams working on an API first approach.</br>
@@ -59,7 +59,7 @@ An API blueprint could be useful for anyone to hit the ground running when build
 **Required knowledge:**</br>
 Understanding of the API first philosophy - https://www.postman.com/use-cases/api-first-development/.</br>
 Comfort with YAML/JSON formats.</br>
-Understanding of API lifecycle phases - Design, Document, Test</br>
+Understanding of API lifecycle phases - Design, Document, Test</br></br>
 
 
 ### Idea 5: API Conversion API</br>
@@ -72,7 +72,7 @@ There is no open source solution that provides conversion among all formats in o
 Depends on the tech stack used by existing converters</br>
 Comfortable with building APIs and learning how to build an API on top of existing converters</br>
 Exposure to frontend technologies to build the UI for the conversions.</br>
-Willingness to learn about different API formats - swagger, raml, openapi</br>
+Willingness to learn about different API formats - swagger, raml, openapi</br></br>
 
 
 ### Idea 6: Contributing to Postman Public Workspace</br>
@@ -87,7 +87,7 @@ Managing Postman environments - https://www.postman.com/api-evangelist/workspace
 Build utilities for managing Postman entities (OpenAPI definitions/collections/environments). These utilities could be scripts embedded in Postman requests/collections or an open source project eg. openapi-utils.
 
 **Required knowledge:**</br>
-Should be familiar with or willing to learn how to use the Postman API, OpenAPI concepts. Hands-on experience with Javascript is necessary. Some familiarity with version control in Postman would help in managing contributions.
+Should be familiar with or willing to learn how to use the Postman API, OpenAPI concepts. Hands-on experience with Javascript is necessary. Some familiarity with version control (https://learning.postman.com/docs/collaborating-in-postman/version-control-for-collections/) in Postman would help in managing contributions.</br></br>
  
 ### Idea 7: Simple schema registry</br>
 Provide a simple implementation of the schema registry API and showcase how this can be used with AsyncAPI document and schema references. It can do an in-memory persistence for schemas as it would be used purely for showcases, and learning materials.
@@ -96,7 +96,7 @@ Provide a simple implementation of the schema registry API and showcase how this
 In AsyncAPI file you can provide schemas for the payload of the message. Those schemas can be shared between different applications, meaning, different AsyncAPI files. Schema registries that store such shareable schemas are becoming a de-facto standard. Would be great to have a simple mock implementation of such schema to show how would it work with AsyncAPI documents.
 
 **Required knowledge:**</br>
-You do not need any specific deep knowledge of any subject here. You will only have to provide an implementation of this API. It is not supposed to be a production-ready implementation, but only for testing and showcasing. Knowledge about how to use this registry with AsyncAPI is something that you can learn while working on the task with mentor support. There is not specific repository where you can place the code. It is something that can be decided anytime during development.
+You do not need any specific deep knowledge of any subject here. You will only have to provide an implementation of this API. It is not supposed to be a production-ready implementation, but only for testing and showcasing. Knowledge about how to use this registry with AsyncAPI is something that you can learn while working on the task with mentor support. There is not specific repository where you can place the code. It is something that can be decided anytime during development.</br></br>
 
 ### Idea 8: Duplications discovery - optimizer</br>
 Build a library that code-first users would benefit from the most but not only. A library that as the input gets AsyncAPI document and as output provides optimized AsyncAPI document. </br></br>
@@ -112,7 +112,7 @@ AsyncAPI offers many different ways to reuse certain parts of the document like 
 **Required knowledge:** </br>
 This task will require from you learning some details about the AsyncAPI spec to 
 understand what parts can be componentized and how reuse works in the spec. This knowledge will be essential to be able to apply optimizations. You will for sure have to go through our getting stated guides and later the spec. Mentors will be available for any questions and setting directions.
-We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli  
+We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli  </br></br>
 
 ### Idea 9: AsyncAPI Diff</br>
 A library that as the input gets two AsyncAPI documents and shows changes between them. As an output, you get json pointers to sections that are different. The main purpose of such a tool is a changelog where you can present to the user what has changed between v1 and v2 of the document. Some ideas can be picked up from https://github.com/OpenAPITools/openapi-diff  </br>
@@ -124,7 +124,7 @@ Diff is needed in a review process, so the reviewer gets an overview of specific
 
 **Required knowledge:**</br>
 There is not much knowledge about the spec itself needed. It is about pointing out differences in 2 different files, but not as pointing what lines changed but in general what objects changed. So if there was an update in payload, the library must specify what channel in what message got updated (with json pointers most probably). You can familiarize with other tools that do it already for other specifications.
-We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli
+We already started work on the CLI so before summer there will be enough to plug in this functionality https://github.com/asyncapi/cli </br></br>
 
 ### Idea 10: AsyncAPI Applications Relations Finder</br>
 A library that as the input gets a list of AsyncAPI documents and analyzes them to get information about Applications described by those files:</br>
