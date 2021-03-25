@@ -19,7 +19,7 @@ JavaScript language</br>
 Understanding of HTTP protocol.</br>
 curl</br>
 
-**Complexity**: low 
+**Complexity**: low </br>
 
 ### Idea 2: Parallel Iterations in Newman</br>
 Newman supports running multiple iterations of a collection with different data provided in a CSV or JSON file, enabling users to test an API against multiple scenarios. But Newman executes each iteration serially and this can take a lot of time as the number of requests in a collection and iterations grow. This project aims to bring parallelism into Newman by splitting the iterations data into multiple chunks and running them as threads to bring down the total time roughly by a factor of n, where n is the number of threads.
@@ -32,7 +32,7 @@ Users can specific the number of parallel iterations that Newman can run.</br>
 JavaScript language</br>
 Understanding of threads and processes communication</br>
 
-**Complexity**: low 
+**Complexity**: low </br>
 
 ### Idea 3: Newman Dashboard</br>
 Newman has an array of reporters that consume the run data that Newman provides. These include viewing a run in the terminal using CLI, as JSON which can be easily transported by a build system, as an HTML summary webpage, and many more. However, Newman lacks a way to control the runs in a central dashboard. This project aims to create a dashboard on a browser which can be used to start, resume, pause and stop Newman runs.
@@ -47,7 +47,7 @@ JavaScript language</br>
 Understanding of daemons and IPC (websockets is a plus).</br>
 Basic understanding of HTML, CSS</br>
 
-**Complexity**: medium
+**Complexity**: medium</br>
 
 ### Idea 4: API-First Blueprint for a Commerce API</br>
 Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org as the underlying schema, providing a functioning and well documented example of what an API can be.
