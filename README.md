@@ -11,5 +11,5 @@ Join our community <a href="https://community.postman.com/">here </a> to interac
 Read the guidelines here - https://community.postman.com/t/gsoc-2021-guidelines/
 
 * Create an issue on this project if you're unable to get a response from the community
-* Start a new idea under discussions only once you've forzen on your project proposal.  
+* Start a new idea under discussions only once you've frozen on your project proposal.  
 * Send us an email at gsoc@postman.com for any administrative or operational concerns regarding the program
