@@ -19,7 +19,7 @@ JavaScript language</br>
 Understanding of HTTP protocol.</br>
 curl</br>
 
-**Complexity**: low </br>
+**Complexity**: low </br></br>
 
 ### Idea 2: Parallel Iterations in Newman</br>
 Newman supports running multiple iterations of a collection with different data provided in a CSV or JSON file, enabling users to test an API against multiple scenarios. But Newman executes each iteration serially and this can take a lot of time as the number of requests in a collection and iterations grow. This project aims to bring parallelism into Newman by splitting the iterations data into multiple chunks and running them as threads to bring down the total time roughly by a factor of n, where n is the number of threads.
