@@ -50,7 +50,7 @@ Basic understanding of HTML, CSS</br>
 **Complexity**: medium</br></br>
 
 ### Idea 4: API-First Blueprint for a Commerce API</br>
-Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the Schema.org (http://Schema.org) as the underlying schema, providing a functioning and well documented example of what an API can be.
+Building out an OpenAPI, mock, documentation, testing, and deployment of a commerce (or other) API that uses the [Schema.org](http://Schema.org) as the underlying schema, providing a functioning and well documented example of what an API can be.
 
 **Use case:**</br>
 Increasing the number of API blueprints that could serve as learning material for individuals/teams working on an API first approach.</br>
